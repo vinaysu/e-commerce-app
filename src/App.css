@@ -143,13 +143,16 @@ select {
 }
 
 li span {
-    text-align: right;
-    margin-left: 2rem;
+    /* text-align: right; */
+    /* margin-left: 2rem; */
     align-self: flex-end;
 }
 
-li {
-    cursor: pointer;
+.list li{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    gap: 1em;
 }
 
 ol {

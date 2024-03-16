@@ -9,6 +9,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { Dialog } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
+import DeleteIcon from '@mui/icons-material/Delete';
 
 
 function App() {
@@ -88,6 +89,13 @@ function App() {
   }
 
 
+  function handleDelete(elem){
+
+    const data=cartList.filter((ele)=>ele.id!=elem.id)
+    setCartList(data)
+
+  }
+
 
   return (
 
@@ -137,7 +145,7 @@ function App() {
                   {
                     cartList.length !== 0 ? cartList.map((ele) =>
                       <div className='list' >
-                        <li>{ele.title} <span>= Rs  {ele.price}</span>  </li>
+                        <li>{ele.title} = Rs {ele.price} <DeleteIcon onClick={()=>handleDelete(ele)} className='del' sx={{padding:'1rem', cursor:'pointer',  }} />  </li>
                         <hr></hr>
                       </div>
                     ) : <h1>No Item in the Cart</h1>
