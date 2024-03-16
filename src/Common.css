@@ -1,0 +1,51 @@
+.container{
+    background-color: rgba(99, 96, 96, 0.5);
+    width: 50vw;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    gap: 1em;
+    border: dotted 1px black;
+    border-radius: 10px;
+    min-height: 85vh;
+    /* position: relative; */
+    position: relative;
+    top: 1rem;
+
+
+}
+
+caption{
+    text-align: right;
+    cursor: pointer;
+    color: white;
+    width: 20vw;
+    position: relative;
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+  
+   
+}
+caption:hover{
+    color: red;
+}
+.link{
+    text-decoration: none;
+    width: 20vw;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+
+}
+
+.link:hover{
+    background-color:cadetblue ;
+    border-radius: 5px;
+    
+}
+
+
+
+
